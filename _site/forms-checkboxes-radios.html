@@ -22,7 +22,147 @@
 <body>
     
     <!--Page Content-->
-    <h2></h2>
+    <div class="container">
+    <h2>Basic Forms</h2>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul>
+                <h3>FORMS TOC</h3>
+                <li><a href="forms-basic.html">A basic form</a></li>
+                <li><a href="forms-inline.html">Inline forms</a></li>
+                <li><a href="forms-inline-input-addons.html">Inline forms with input add-ons</a></li>
+                <li><a href="forms-horizontal.html">Horizontal forms</a></li>
+                <li><a href="forms-supported-controls.html">Supported controls</a></li>
+                <li><a href="forms-textarea.html">Textarea</a></li>
+                <li><a href="forms-checkboxes-radios.html">Checkboxes and radios</a></li>
+                <li><a href="forms-selects.html">Selects</a></li>
+                <li><a href="forms-static-control.html">Static control</a></li>
+                <li><a href="forms-input-states.html">Input states</a></li>
+                <li><a href="forms-help-text.html">Associating help text with form controls</a></li>
+                <li><a href="forms-validation-states.html">Validation states</a></li>
+                <li><a href="forms-control-sizing.html">Control sizing</a></li>
+                <li><a href="forms-height-sizing.html">Height sizing</a></li>
+                <li><a href="forms-horizontal-form-group-sizes.html">Horizontal form group sizes</a></li>
+                <li><a href="forms-column-sizing.html">Column sizing</a></li>
+            </ul>
+        </div>
+
+<div class="col-xs-6">
+
+    <pre>
+                <code>
+// Pseudo-code example:
+
+// Checkboxes and radios
+form
+    .checkbox
+        label
+            input
+    .checkbox-disabled
+        label
+            input
+    .radio
+        label
+            input
+/form
+
+// Inline checkboxes and radios
+form
+        label.checkbox-inline
+            input
+        label.checkbox-inline
+            input
+        label.checkbox-inline
+            input
+        label.radio-inline
+            input
+        label.radio-inline
+            input
+        label.radio-inline
+            input
+/form
+
+// Checkboxes and radios without label text
+
+form
+    .checkbox
+        label
+            input
+    .radio
+        label
+            input
+/form
+                </code>
+            </pre>
+</div>
+<div class="col-xs-6">
+    <h2>Checkboxes and radios</h2>
+    <form class="">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+        <div class="checkbox disabled">
+            <label>
+                <input type="checkbox" value="" disabled> Option two is disabled
+            </label>
+        </div>
+        
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option two can be something else and selecting it will deselect option one
+            </label>
+        </div>
+        <div class="radio disabled">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Option three is disabled
+            </label>
+        </div>
+    </form>
+    <h2>Inline checkboxes and radios</h2>
+    <form action="" class="">
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+        </label>
+        
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+        </label>        
+    </form>
+    <h2>Checkboxes and radios without label text</h2>
+    <form action="" class="">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+            </label>
+        </div>
+    </form>
+</div>
+</div>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
