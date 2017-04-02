@@ -22,7 +22,106 @@
 <body>
     
     <!--Page Content-->
-    <h2></h2>
+    <div class="container">
+    <h2>Basic Forms</h2>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul>
+                <h3>FORMS TOC</h3>
+                <li><a href="forms-basic.html">A basic form</a></li>
+                <li><a href="forms-inline.html">Inline forms</a></li>
+                <li><a href="forms-inline-input-addons.html">Inline forms with input add-ons</a></li>
+                <li><a href="forms-horizontal.html">Horizontal forms</a></li>
+                <li><a href="forms-supported-controls.html">Supported controls</a></li>
+                <li><a href="forms-textarea.html">Textarea</a></li>
+                <li><a href="forms-checkboxes-radios.html">Checkboxes and radios</a></li>
+                <li><a href="forms-selects.html">Selects</a></li>
+                <li><a href="forms-static-control.html">Static control</a></li>
+                <li><a href="forms-input-states.html">Input states</a></li>
+                <li><a href="forms-help-text.html">Associating help text with form controls</a></li>
+                <li><a href="forms-validation-states.html">Validation states</a></li>
+                <li><a href="forms-control-sizing.html">Control sizing</a></li>
+                <li><a href="forms-height-sizing.html">Height sizing</a></li>
+                <li><a href="forms-horizontal-form-group-sizes.html">Horizontal form group sizes</a></li>
+                <li><a href="forms-column-sizing.html">Column sizing</a></li>
+            </ul>
+        </div>
+
+<div class="col-xs-6">
+
+    <pre>
+                <code>
+// Pseudo-code example:
+
+// INPUT STATES
+
+
+// Focus state
+input.form-control:focus {
+    box-shadow: bluish etc...
+}
+
+
+// Disabled state
+input.form-control[type="text"][disabled]
+
+
+// Disabled fieldsets
+fieldset[disabled]...
+
+// like this:
+form
+    fieldset[disabled]
+        .form-group
+            label
+        ...
+    /fieldset
+/form
+
+
+// Readonly state
+input.form-control[type="text"][readonly]
+                </code>
+            </pre>
+</div>
+<div class="col-xs-6">
+    <h2>Focus state</h2>
+    <p>Focus state in Bootstrap is achieved by removing the default <code>outline</code> styles from some form controls. Instead, <code>box-shadow</code> CSS property is used.</p>
+    
+    <h2>Disabled state</h2>
+    <form action="" class="">
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+    </form>
+    
+    <h2>Disabled fieldsets</h2>
+    <form>
+      <fieldset disabled>
+        <div class="form-group">
+          <label for="disabledTextInput">Disabled input</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="form-group">
+          <label for="disabledSelect">Disabled select menu</label>
+          <select id="disabledSelect" class="form-control">
+            <option>Disabled select</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Can't check this
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+    
+    <h2>Readonly state</h2>
+    <form action="" class="">
+        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    </form>
+</div>
+</div>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

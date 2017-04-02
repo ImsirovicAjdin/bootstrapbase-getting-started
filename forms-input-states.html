@@ -1,5 +1,81 @@
 --- 
 layout: home 
----
+--- 
 
-<h2></h2>
+{% include forms-toc.html %}
+
+<div class="col-xs-6">
+
+    <pre>
+                <code>
+// Pseudo-code example:
+
+// INPUT STATES
+
+
+// Focus state
+input.form-control:focus {
+    box-shadow: bluish etc...
+}
+
+
+// Disabled state
+input.form-control[type="text"][disabled]
+
+
+// Disabled fieldsets
+fieldset[disabled]...
+
+// like this:
+form
+    fieldset[disabled]
+        .form-group
+            label
+        ...
+    /fieldset
+/form
+
+
+// Readonly state
+input.form-control[type="text"][readonly]
+                </code>
+            </pre>
+</div>
+<div class="col-xs-6">
+    <h2>Focus state</h2>
+    <p>Focus state in Bootstrap is achieved by removing the default <code>outline</code> styles from some form controls. Instead, <code>box-shadow</code> CSS property is used.</p>
+    
+    <h2>Disabled state</h2>
+    <form action="" class="">
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+    </form>
+    
+    <h2>Disabled fieldsets</h2>
+    <form>
+      <fieldset disabled>
+        <div class="form-group">
+          <label for="disabledTextInput">Disabled input</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="form-group">
+          <label for="disabledSelect">Disabled select menu</label>
+          <select id="disabledSelect" class="form-control">
+            <option>Disabled select</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Can't check this
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+    
+    <h2>Readonly state</h2>
+    <form action="" class="">
+        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+    </form>
+</div>
+</div>
+</div>
