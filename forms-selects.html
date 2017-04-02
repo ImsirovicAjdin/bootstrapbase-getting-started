@@ -1,5 +1,58 @@
 --- 
 layout: home 
----
+--- 
 
-<h2></h2>
+{% include forms-toc.html %}
+
+<div class="col-xs-6">
+
+    <pre>
+                <code>
+// Pseudo-code example:
+
+// Selects
+form
+    select.form-control
+        option
+        option
+        ...
+        option
+    /select
+/form
+
+// Selects with the multiple attribute
+form
+    select.form-control[multiple]
+        option
+        option
+        ...
+        option
+    /select
+/form
+                </code>
+            </pre>
+</div>
+<div class="col-xs-6">
+    <h2>Selects</h2>
+    <form class="">
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+    </form>
+    <h2>Selects with the multiple attribute</h2>
+    <select multiple class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+    </form>
+
+</div>
+</div>
+</div>
