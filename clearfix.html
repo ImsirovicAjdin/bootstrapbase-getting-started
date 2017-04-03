@@ -1,0 +1,10 @@
+--- 
+layout: home 
+---
+
+<div class="bg-warning clearfix" style="padding: 40px">Parent div<br>some other text
+    <div class="bg-danger height-200 col-xs-4 pull-right">Child div</div>
+</div>
+
+<p class="h3">What is happening here?</p>
+<p class="h4">When a child element is floated inside a parent, the parent will not visually contain it, unless we use clearfix. The child is 200px tall, but the parent will not "know" about this height.</p>
