@@ -5648,3 +5648,9 @@ button.close {
 .box-smaller {
   height: 50px;
   border: 4px dashed blue; }
+
+/*
+a.dropdown-toggle {
+    max-width: 140px;
+}
+*/
